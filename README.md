@@ -2,5 +2,7 @@
 
 ## A product by Team GoogleFit
 
-### Using AI to make life simpler
+### This program based on using AI to make life simpler.
+
+
 
