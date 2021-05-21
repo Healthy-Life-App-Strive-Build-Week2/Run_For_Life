@@ -1,0 +1,60 @@
+<FLayout>
+    ScreenManager:
+        id: _screen_manager
+        Screen:
+            name: 'first'
+
+            BoxLayout:
+                orientation: 'vertical'
+                size: root.width, root.height
+
+                GridLayout:
+                    cols: 2
+                    rows: 3
+
+                    Label:
+                        text: 'Age'
+                    TextInput:
+                        id: age_input
+                        text: ''
+                        multiline: False
+                    Label:
+                        text: 'Height in cm'
+                    TextInput:
+                        id: height_input
+                        text: ''
+                        multiline: False
+                    Label:
+                        text: 'Weight in kg'
+                    TextInput:
+                        id: weight_input
+                        text: ''
+                        multiline: False
+
+                GridLayout:
+                    cols: 2
+                    rows: 1
+
+                    Button:
+                        id: submit
+                        text: 'Submit'
+                        on_press: root.submit()
+                        on_release: _screen_manager.current = 'second'
+
+                    Button:
+                        id: skip
+                        text: 'Skip'
+                        on_release: _screen_manager.current = 'second'
+
+        Screen:
+            name: 'second'
+
+            GridLayout:
+                cols: 1
+                rows: 2
+
+                Button:
+                    id: back
+                    text: 'Back'
+                    size: (100,100)
+                    on_press: _screen_manager.current = 'first'
