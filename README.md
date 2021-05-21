@@ -1,6 +1,6 @@
-# Run For Life
+# GoogleFit Journey Classifier
 
-### End Goal: 
-1-Prediction estimated calories 
+## A product by Team GoogleFit
 
-2-
+### Using AI to make life simpler
+
